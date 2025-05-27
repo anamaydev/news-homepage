@@ -1,1 +1,70 @@
+/* import custom font */
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @import "tailwindcss";
+
+@theme{
+  /* custom colors */
+  --color-white: hsla(0, 0%, 100%, 1);
+  --color-black: hsla(0, 0%, 0%, 1);
+  --color-grey-300: hsla(233, 8%, 79%, 1);
+  --color-grey-200: hsla(0, 0%, 85%, 1);
+  --color-navy-950: hsla(240, 100%, 5%, 1);
+  --color-navy-600: hsla(236, 13%, 42%, 1);
+  --color-gold: hsla(35, 77%, 62%, 1);
+  --color-red: hsla(4, 85%, 63%, 1);
+  
+  /* customise default tailwind spacing */
+  --spacing: 0.5rem;
+  
+  /* custom font-size */
+  --font-xxl: 3.5rem;     /* 56px */
+  --font-xl: 2.5rem;      /* 40px */
+  --font-lg: 2rem;        /* 32px */
+  --font-md: 1.25rem;     /* 20px */
+  --font-base: 1.125rem;  /* 18px */
+  --font-sm: 0.9375rem;   /* 15px */
+  --font-xs: 0.875rem;    /* 14px */
+  
+  /* custom line height */
+  --leading-tight: 1.2;
+  --leading-snug: 1.33;
+  --leading-relaxed: 1.714;
+  --leading-loose: 1.733;
+  
+  --font-inter: "Inter", sans-serif;
+}
+
+@utility text-preset-1{
+  @apply font-xxl leading-none;
+}
+
+@utility text-preset-2{
+  @apply font-xl leading-none;
+}
+
+@utility text-preset-3{
+  @apply font-lg leading-none;
+}
+
+@utility text-preset-4{
+  @apply font-md leading-tight;
+}
+
+@utility text-preset-5{
+  @apply font-base leading-snug;
+}
+
+@utility text-preset-6{
+  @apply font-sm leading-loose;
+}
+
+@utility text-preset-6{
+  @apply font-xs leading-relaxed tracking-[4.38px];
+}
