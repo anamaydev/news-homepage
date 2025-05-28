@@ -24,13 +24,13 @@
   --spacing: 0.5rem;
   
   /* custom font-size */
-  --font-xxl: 3.5rem;     /* 56px */
-  --font-xl: 2.5rem;      /* 40px */
-  --font-lg: 2rem;        /* 32px */
-  --font-md: 1.25rem;     /* 20px */
-  --font-base: 1.125rem;  /* 18px */
-  --font-sm: 0.9375rem;   /* 15px */
-  --font-xs: 0.875rem;    /* 14px */
+  --text-xxl: 3.5rem;     /* 56px */
+  --text-xl: 2.5rem;      /* 40px */
+  --text-lg: 2rem;        /* 32px */
+  --text-md: 1.25rem;     /* 20px */
+  --text-base: 1.125rem;  /* 18px */
+  --text-sm: 0.9375rem;   /* 15px */
+  --text-xs: 0.875rem;    /* 14px */
   
   /* custom line height */
   --leading-tight: 1.2;
@@ -38,33 +38,48 @@
   --leading-relaxed: 1.714;
   --leading-loose: 1.733;
   
+  /* custom font */
   --font-inter: "Inter", sans-serif;
+  
+  /* logo custom size */
+  --logo-w-sm: 45px;
+  
+  /* customise breakpoint */
+  --breakpoint-md: 770px;
 }
 
+@layer base {
+  /* base font family */
+  body{
+    @apply font-inter;
+  }
+}
+
+/* text preset utility classes */
 @utility text-preset-1{
-  @apply font-xxl leading-none;
+  @apply text-xxl leading-none;
 }
 
 @utility text-preset-2{
-  @apply font-xl leading-none;
+  @apply text-xl leading-none;
 }
 
 @utility text-preset-3{
-  @apply font-lg leading-none;
+  @apply text-lg leading-none;
 }
 
 @utility text-preset-4{
-  @apply font-md leading-tight;
+  @apply text-md leading-tight;
 }
 
 @utility text-preset-5{
-  @apply font-base leading-snug;
+  @apply text-base leading-snug;
 }
 
 @utility text-preset-6{
-  @apply font-sm leading-loose;
+  @apply text-sm leading-loose;
 }
 
-@utility text-preset-6{
-  @apply font-xs leading-relaxed tracking-[4.38px];
+@utility text-preset-7{
+  @apply text-xs leading-relaxed tracking-[4.38px];
 }
