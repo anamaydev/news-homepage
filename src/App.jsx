@@ -1,8 +1,8 @@
 /* todo:
 *   [x] create custom spacings, colors and fonts
 *   [ ] create all components
-*       [ ]  Header
-*           [ ] Nav Bar
+*       [x]  Header
+*           [x] Nav Bar
 *       [ ]  Main
 *           [ ] Hero Article
 *           [ ] Featured Article
@@ -11,11 +11,13 @@
 * */
 
 import Header from './components/Header/Header'
+import Main from './components/Main/Main'
 
 function App() {
   return (
-    <div className="max-w-139 mx-auto">
-      <Header />
+    <div className="max-w-139 mx-auto grid gap-8">
+      <Header/>
+      <Main/>
     </div>
   )
 }
