@@ -4,7 +4,7 @@
 *       [x]  Header
 *           [x] Nav Bar
 *       [ ]  Main
-*           [ ] Hero Article
+*           [x] Hero Article
 *           [ ] Featured Article
 *       [ ] Footer
 *           [ ] Article List
