@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { nanoid } from 'nanoid'
 
 import logo from '../../assets/images/logo.svg'
 import menu from '../../assets/images/icon-menu.svg'
@@ -16,7 +17,7 @@ export default function Header() {
       {name: 'Categories', href:'#'}
     ]
 
-    return navPageArray.map(page=> <li><a href={page.href}>{page.name}</a></li>)
+    return navPageArray.map(page=> <li key={nanoid()} ><a href={page.href}>{page.name}</a></li>)
   }
 
   return (
