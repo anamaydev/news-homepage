@@ -57,29 +57,29 @@
 
 /* text preset utility classes */
 @utility text-preset-1{
-  @apply text-xxl leading-none;
+  @apply text-xxl leading-none font-extrabold;
 }
 
 @utility text-preset-2{
-  @apply text-xl leading-none;
+  @apply text-xl leading-none font-extrabold;
 }
 
 @utility text-preset-3{
-  @apply text-lg leading-none;
+  @apply text-lg leading-none font-bold;
 }
 
 @utility text-preset-4{
-  @apply text-md leading-tight;
+  @apply text-md leading-tight font-extrabold;
 }
 
 @utility text-preset-5{
-  @apply text-base leading-snug;
+  @apply text-base leading-snug font-extrabold;
 }
 
 @utility text-preset-6{
-  @apply text-sm leading-loose;
+  @apply text-sm leading-loose font-normal;
 }
 
 @utility text-preset-7{
-  @apply text-xs leading-relaxed tracking-[4.38px];
+  @apply text-xs leading-relaxed font-bold tracking-[4.38px];
 }
