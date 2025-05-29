@@ -11,7 +11,7 @@ export default function FeaturedArticles() {
     return featuredArticles.map(article =>(
       <li
         key={nanoid()}
-        className="py-4 border-b border-navy-600"
+        className="py-4 border-b border-navy-600 first:pt-0 last:pb-0 last:border-none"
       >
         <a
           href={article.href}
