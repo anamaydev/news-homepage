@@ -3,7 +3,7 @@ import imageWeb3Desktop from '../../assets/images/image-web-3-desktop.jpg'
 
 export default function HeroArticle(){
   return (
-    <article className="flex flex-col gap-3">
+    <article className="flex flex-col gap-3 lg:col-span-2">
       <picture>
         <source media="(min-width: 40rem)" srcSet={imageWeb3Desktop} />
         <source srcSet={imageWeb3Mobile} />
