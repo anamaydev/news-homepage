@@ -1,19 +1,3 @@
-/* todo:
-*   [x] create custom spacings, colors and fonts
-*   [x] create all components
-*       [x]  Header
-*           [x] Nav Bar
-*       [x]  Main
-*           [x] Hero Article
-*           [x] Featured Article
-*       [x] Footer
-*           [x] Article List
-*   [x] create final responsive layout
-*   [x] improve user experience
-*   [ ] improve accessibility
-*   [ ] deploy
-* */
-
 import Header from './components/Header/Header'
 import Main from './components/Main/Main'
 import Footer from './components/Footer/Footer'
