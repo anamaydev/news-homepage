@@ -7,7 +7,7 @@ export default function FeaturedArticles() {
     {title:'Is VC Funding Drying Up?', desc:'Private funding by VC firms is down 50% YOY. We take a look at what that means.', href:'#'},
   ]
 
-  function FeaturedArticles(){
+  function ArticleListItems(){
     return featuredArticles.map(article =>(
       <li
         key={nanoid()}
@@ -28,7 +28,7 @@ export default function FeaturedArticles() {
     <article className="flex flex-col gap-4 py-2 px-3 sm:py-4 sm:px-5 lg:py-2 lg:px-3 bg-navy-950 text-white">
       <h2 className="text-preset-3 text-gold">New</h2>
       <ul>
-        <FeaturedArticles/>
+        <ArticleListItems/>
       </ul>
     </article>
   )
