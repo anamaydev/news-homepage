@@ -8,7 +8,10 @@
 *           [x] Featured Article
 *       [x] Footer
 *           [x] Article List
-*   [ ] create final responsive layout
+*   [x] create final responsive layout
+*   [x] improve user experience
+*   [ ] improve accessibility
+*   [ ] deploy
 * */
 
 import Header from './components/Header/Header'

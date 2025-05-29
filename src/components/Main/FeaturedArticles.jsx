@@ -11,13 +11,13 @@ export default function FeaturedArticles() {
     return featuredArticles.map(article =>(
       <li
         key={nanoid()}
-        className="py-4 border-b border-navy-600 first:pt-0 last:pb-0 last:border-none"
+        className="py-4 border-b border-navy-600 first:pt-0 last:pb-0 last:border-none group"
       >
         <a
           href={article.href}
           className="flex flex-col gap-1"
         >
-          <h3 className="text-preset-4">{article.title}</h3>
+          <h3 className="text-preset-4 group-hover:text-gold transition-colors duration-500">{article.title}</h3>
           <p className="text-preset-6">{article.desc}</p>
         </a>
       </li>

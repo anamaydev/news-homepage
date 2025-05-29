@@ -13,15 +13,15 @@ export default function Footer() {
 
   function ArticleListItems(){
     return articleListArray.map((article, idx) =>(
-      <li key={nanoid()} className="flex-1">
+      <li key={nanoid()} className="flex-1 group">
         <a
           href={article.href}
           className="flex gap-3"
         >
-          <img src={article.img} alt={article.alt} className="w-12.5 h-16.25 object-cover"/>
+          <img src={article.img} alt={article.alt} className="w-12.5 h-16.25 object-cover group-hover:scale-105 transition-scale duration-500"/>
           <div className="flex flex-col gap-1">
             <p className="text-preset-3 text-red">{idx < 10 ? '0' + (idx+1) : (idx+1)}</p>
-            <h3 className="text-preset-5 text-navy-950">{article.title}</h3>
+            <h3 className="text-preset-5 text-navy-950 group-hover:text-red">{article.title}</h3>
             <p className="text-preset-6 text-navy-600">{article.desc}</p>
           </div>
         </a>

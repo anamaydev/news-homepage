@@ -17,7 +17,7 @@ export default function Header() {
       {name: 'Categories', href:'#'}
     ]
 
-    return navPageArray.map(page=> <li key={nanoid()} ><a href={page.href}>{page.name}</a></li>)
+    return navPageArray.map(page=> <li key={nanoid()} ><a href={page.href} className="hover:text-red transition-colors duration-500">{page.name}</a></li>)
   }
 
   return (
